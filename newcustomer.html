@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <link rel="stylesheet" href="./new.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PayHe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="navbar-nav">
+          <li><a class="nav-link" href="#"><span class="glyphicon glyphicon-user"></span>New customer</a></li>
+          <li><a class="nav-link" href="./transaction.html">Send money</a></li>
+          <li><a class="nav-link" href="./login.html"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+        </ul>
+      </nav>
+      <div class="div-form px-5 rounded" id="div-form" >
+        <form  id="add-customer" onsubmit="submit()">
+          <table>
+            <tr>
+              <td><input type="text" placeholder="Your NPCI account" /></td>
+            </tr>
+            <tr>
+              <td><input type="text" placeholder="Name" id="name"/></td>
+            </tr>
+            <tr>
+              <td><input type="email" placeholder="Email" /></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="tele" placeholder="Phone" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" placeholder="Account balance" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="age" placeholder="Age"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" placeholder="Address" style="height: 100px;" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" value="Add customer" class="submit" style="width: 120px; height: 40px;"/>
+        </form>
+      </div>
+</body>
+<script>
+  var formEl = document.getElementById("add-customer");
+var fname = document.getElementById("name");
+
+test.addEventListener("submit", submit);
+
+function submit(e) {
+   e.preventDefault();
+   var fnameval = name.value;
+   alert("Added successfully..!");
+}
+</script>
+</html>
